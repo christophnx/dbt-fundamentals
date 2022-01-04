@@ -1,0 +1,1 @@
+select id, orderid as order_id, amount, status as status_payment from raw.stripe.payment
