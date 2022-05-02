@@ -1,5 +1,5 @@
 with payments as (
-    select amount, order_id as id from {{ ('stg_payments') }} where status_payment = 'success'
+    select amount, order_id as id from {{ ref('stg_payments') }} where status_payment = 'success'
 )
 
 select
